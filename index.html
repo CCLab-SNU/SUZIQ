@@ -1,48 +1,69 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <body style="padding-top: 5rem;">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">CCLAB</a>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</head>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Android</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">iOS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<body>
+    <div class="container">
+      <div style="  padding: 3rem 1.5rem;text-align: center;">
+  <h1>SNU CCLAB 영유아 AR 앱 배포 웹</h1>
+  <p class="lead">앱 배포및 설명을 위해 사용되는 웹페이지입니다.<br> 사용 후, 외부 유출이 되지 않도록 웹페이지는 꼭 닫아주세요!</p>
+</div>
+      <div class="jumbotron">
+          <div class="container">
+              <h1>Android App</h1>
+              <p>안드로이드용 앱 다운로드입니다.(seafile 배포) </p>
+              <p><a class="btn btn-primary btn-lg" href="http://147.47.123.4:8000/f/c32f61187a/?raw=1" role="button">Download</a></p>
+          </div>
+      </div>
 
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Android App</h1>
-            <p>안드로이드용 앱 다운로드입니다. 연구실의 Seafile 을 통해서 공유됩니다. </p>
-            <p><a class="btn btn-primary btn-lg" href="http://147.47.123.4:8000/f/c32f61187a/?raw=1" role="button">Download</a></p>
-        </div>
+      <div class="jumbotron">
+          <div class="container">
+              <h1>iOS UDID 가져오기</h1>
+              <p>앱 설치를 하기 위해서, 디바이스의 UDID 를 등록하는 과정이 필요합니다.</p>
+              <p><a class="btn btn-primary btn-lg" href="http://get.udid.io" role="button">GET UDID</a></p>
+          </div>
+      </div>
+
+      <div class="jumbotron">
+          <div class="container">
+              <h1>iOS App</h1>
+              <p>iOS 앱 다운로드입니다. (github 배포)</p>
+              <p><a class="btn btn-primary btn-lg" href="itms-services://?action=download-manifest&url=https://github.com/CCLab-SNU/SUZIQ/raw/Publis/iOS/manifest.plist" role="button">Download</a></p>
+          </div>
+      </div>
     </div>
 
-
-    <div class="jumbotron">
-        <div class="container">
-            <h1>iOS App</h1>
-            <p>iOS 앱 다운로드입니다. ipa 파일이 github 를 통해 배포되기 때문에, 다운로드 속도가 느릴 수 있습니다. </p>
-            <p><a class="btn btn-primary btn-lg" href="itms-services://?action=download-manifest&url=https://github.com/CCLab-SNU/SUZIQ/raw/Publis/iOS/manifest.plist" role="button">Download</a></p>
-        </div>
-    </div>
-
-
-    <div class="jumbotron">
-        <div class="container">
-            <h1>NEW iOS App - develop deploy</h1>
-            <p>iOS 앱 다운로드입니다. ipa 파일이 github 를 통해 배포되기 때문에, 다운로드 속도가 느릴 수 있습니다. </p>
-            <p><a class="btn btn-primary btn-lg" href="itms-services://?action=download-manifest&url=https://github.com/CCLab-SNU/SUZIQ/raw/Publis/iOS/SUZIQ-github-developdeploy/manifest.plist" role="button">Download</a></p>
-        </div>
-    </div>
-
-</body>
-
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
 </html>
